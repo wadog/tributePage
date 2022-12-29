@@ -1,95 +1,83 @@
 /* Setting a base font size of 10px give us easier rem calculations
      Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth
    */
-   html {
-    font-family: 'Oswald', sans-serif;
-    font-size: 10px;
-    text-align: center;
-    color:#fff;
-    
-  }
-  body {
-    font-family: system-ui;
-    background: #555;
-    text-align: center;
-    font-size: 1.5rem;
-  }
+/*desktop version*/
+
+html {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: #191d15;
+}
+body {
+  background: #F4F5F2;
+  text-align: center;
+}
+#sub-title{
+  font-weight: 600;
+  width: 100%;
+}
+#img-div {
+  background-color: #D7CAD1;
+  max-width: 100%;
+  height: 510px;
+  padding: 20px;
+}
+#img {
+  display: block;
+  padding: 10px;
+  border-radius: 15px;
+  max-width: 100%;
+  height: auto;
+}
+#img-caption {
+  font-size: 15px;
+  padding-bottom: 15px;
+}
+#title {
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 50px;
+  margin: 0px;
+}
+.container h2 {
+  font-weight: 400;
+  border-bottom: #191d15 solid;
+}
+.container p {
+  margin: 70px auto;
+  padding: 0 150px 0 150px;
+  line-height: 25px;
+  letter-spacing: 2px;
+}
+#quotes {
+  margin: 60px;
+}
+#footer p {
+  margin-top: 100px;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  color: #B7BDC1;
+}
+/*mobile version*/
+
+@media (max-width: 767px) {
   h1 {
-    font-size:6rem;
-  }
-  h2 {
-    font-size:3rem;
-  }
-  #title {
-    padding: 10px;
-    border-radius: 5px;
-  }
-  
-  #main {
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0.9)
-      ),
-      url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Starsinthesky.jpg/1024px-Starsinthesky.jpg");
-    background-color: #dee2e6;
-  }
-  
-  #img-div {
-    padding: 10px;
-    margin: 0;
-  }
-  img {
-    max-width: 100%;
-    display: block;
-    height: auto;
-    margin: 0 auto;
-  }
-  
-  #tribute-info {
-    position: center;
-    padding: 0 15rem;
-  }
-  #tribute-info p {
-    padding: 5%;
-    margin: 0px 4px;
-    text-align: center;
-    font-size: 14px;
-    background-color: rgba(0, 0, 0, 0.2);
-    border: 3px solid white;
-  }
-  .radius1 {
-    border-radius: 40px 40px;
-  }
-  .radius2 {
-    border-radius: 40px 40px;
-  }
-  #quotes {
-    margin: 10em 2em;
-    font-style: italic;
-  }
-  #footer {
-    font-style: unset;
-    font-size: 20px;
-    padding-bottom: 2em;
-  }
-  @media (max-width: 767px) {
-  h1{
     font-size: 2rem;
   }
-  #image{
+  #image {
     width: 100%;
     margin: auto;
   }
   #main p {
     font-size: 1.3rem;
   }
-  h2{
+  h2 {
     font-size: 1.5rem;
   }
-  #tribute-info{
+  #tribute-info {
     padding: 0 5rem;
   }
-  }
-  
-  
-  
+}
